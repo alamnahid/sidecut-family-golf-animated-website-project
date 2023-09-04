@@ -1,0 +1,114 @@
+video{
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+#page1{
+    z-index: 10;
+    
+}
+#page2{
+    z-index: 10;
+}
+#main{
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+
+/* pore thik korbo */
+/* #page1 h1::before{
+    position: absolute;
+    top: -.4rem;
+    left: -.4rem;
+    width: 100%;
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+    text-shadow: -1px -1px 0 #95c11e, 1px -1px 0 #95c11e, -1px 1px 0 #95c11e, 1px 1px 0 #95c11e;
+    z-index: -1;
+} */
+
+#heading-cover{
+    text-shadow: -5px -6px rgba(97, 148, 64, 0.659);
+}
+
+#cursor{
+    height: 20px;
+    width: 20px;
+    background-color: #95C11E;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+}
+#cursor-blur{
+    height: 400px;
+    width: 400px;
+    background-color: #96c11e57;
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(50px);
+    z-index: 9;
+}
+
+#scroller{
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+#scroller h4:hover{
+    color: #95C11E;
+}
+#scroller-in{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+#scroller::-webkit-scrollbar{
+    display: none;
+}
+#scroller h4{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 10px;
+    color: transparent;
+    -webkit-text-stroke: 2px #95C11E;
+    transition: all linear 0.5s;
+}
+
+@keyframes scroll{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#card1{
+    background-image: url(./images/hero-4-1024x1024.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 80%;
+}
+#card2{
+    background-image: url(./images/hero-lessons.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 80%;
+}
+#card3{
+    background-image: url(./images/hero-toptracer.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 80%;
+}
+
+
